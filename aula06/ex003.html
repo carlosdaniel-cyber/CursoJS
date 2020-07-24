@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        body {
+            background-color: rgb(95, 95, 165);
+            color: white; /* Comentário em Css */
+            font: normal 20pt Arial;
+        }
+        h1 {
+            color: rgb(255, 212, 22);
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1> <!-- Isso é um comentário -->
+    <p>Já me livrei da maldição</p>
+    <script>
+        // Número > String: String(n) ou n.toString()
+        var n1 = Number(window.prompt('Digite um número: ')) // Prompt: usado para strings
+        var n2 = Number.parseFloat(window.prompt('Digite outro número: ')) // parseFloat tbm funciona
+        var soma = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${soma}`) // Template Strings
+    </script>
+</body>
+</html>
