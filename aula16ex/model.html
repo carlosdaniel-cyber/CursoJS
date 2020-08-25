@@ -13,16 +13,18 @@
     <section>
         <div>
             <p>
-                Number (between 1 and 100): <input type="number" id="number">
-                <button onclick="addNumber">Add</button>
+                Number (between 1 and 100):
+                <input type="number" id="number">
+                <button onclick="addNumber()">Add</button>
+                <!-- parentheses can mess you up big time-->
             </p>
+            
+            <select id="addedValues" size="8"></select>
+            <br>
+            <button onclick="submit()">Submit</button>
         </div>
-        <div>
-            <select id="addedValues" size="8">
-                <option>Type a number on the field above</option>
-            </select><br>
-            <button>Submit</button>
-        </div>
+
+        <div id="result"></div>
     </section>
     <footer>
         <p>&copy; Carlos Daniel</p>
